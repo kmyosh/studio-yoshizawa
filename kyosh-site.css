@@ -42,7 +42,7 @@ a:hover {
   align-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .art-block {
@@ -54,6 +54,9 @@ a:hover {
   justify-content: left;
   height: auto;
   align-content: center;
+  font-size: 20pt;
+  flex-wrap: wrap;
+  width: 40vw;
 }
 
 .art-block img {
@@ -61,9 +64,7 @@ a:hover {
 }
 
 .art-block p {
-  /* font-size: 20pt; */
   display: flex;
-  /* width: 20vw; */
 }
 
 .art-text {
@@ -71,7 +72,6 @@ a:hover {
 }
 
 .art-block:first-child {
-  font-size: 10pt;
   display: flex;
   padding: 10px;
   flex-direction: column;
@@ -81,23 +81,22 @@ a:hover {
   align-content: left;
   flex-wrap: wrap;
   text-align: left;
-  flex: 1 0 auto;
+  width: 40vw;
+  /* flex: 1 0 auto; */
 }
 .art-block:first-child img {
   justify-content: center;
 }
-
 .art-block:first-child h2 {
   text-decoration: underline;
   font-size: 24pt;
   text-align: left;
 }
 .art-block:first-child p {
-  /* font-size: 20pt; */
   text-align: left;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -124,9 +123,6 @@ a:hover {
     min-width: 100vw;
     gap: 50px;
   }
-  /* .art-block:first-child p {
-    max-width: 40vw;
-  } */
   .art-txt:first-child {
     display: flex;
   }
@@ -174,23 +170,7 @@ p {
   flex-shrink: 0;
   height: 300pt;
 }
-@media (min-width: 800px) {
-  /* .about {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    justify-content: center;
-    max-width: 70vw;
-    margin: 10vw;
-    gap: 10vw;
-    flex-wrap: wrap;
-  }
-  .about-text {
-    display: flex;
-    flex-direction: column;
-  } */
-}
+
 .contact-container {
   display: flex;
   justify-content: center;
