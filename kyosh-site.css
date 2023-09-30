@@ -108,6 +108,12 @@ a:hover {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    flex-direction: row;
+    max-width: 80vw;
+    justify-items: center;
+    align-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
   .art-block img {
     height: 50vh;
@@ -116,20 +122,24 @@ a:hover {
     display: flex;
     justify-content: center;
     flex: 1 0 auto;
+    width: 20vw;
+    font-size: small;
+    overflow: scroll;
   }
   .art-block:first-child {
     display: flex;
     flex-direction: row;
     min-width: 100vw;
     gap: 50px;
+    font-size: medium;
   }
-  .art-txt:first-child {
-    display: flex;
+  .art-block:first-child p {
+    width: 50vw;
   }
   .art-block p {
     display: flex;
     flex: 1 0 auto;
-    max-width: 10vw;
+    width: 20vw;
   }
 }
 .price,
